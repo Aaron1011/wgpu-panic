@@ -7,5 +7,7 @@ fn main() {
 		compatible_surface: None
 	})).unwrap();
 
+    println!("Device: {:?}", adapter.get_info());
+
     panic!("Deliberate panic");
 }
