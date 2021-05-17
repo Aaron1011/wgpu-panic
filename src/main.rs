@@ -7,14 +7,5 @@ fn main() {
 		compatible_surface: None
 	})).unwrap();
 
-	block_on(adapter.request_device(
-		&wgpu::DeviceDescriptor {
-			label: None,
-			features: wgpu::Features::empty(),
-			limits: wgpu::Limits::default(),
-		},
-        None
-	)).unwrap();
-
-    panic!("Panicking");
+    panic!("Deliberate panic");
 }
